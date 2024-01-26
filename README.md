@@ -14,3 +14,6 @@ Maps DLLs from Memory like a real Module
 - No deps besides ntdll (Makes use of syscalls directly)
 - Works exactly like LoadLibrary, which is how it achieves compat
 - dlls like openssl dont have breaking side effects (manualmapped openssl does fail to initialize, but works fine with ntldrmap)
+
+# release plans
+- atm none, keeping bits private for now. repo only exists for contact purpose.
