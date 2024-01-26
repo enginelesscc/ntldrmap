@@ -9,7 +9,8 @@ Maps DLLs from Memory like a real Module
 - Requires no private symbols!
 - Exceptions work fine (SEH, C++ eh, etc..), on both x86 and amd64!
 - No issues/conflicts with cf guards
-- Mapped modules are visible via winapi, can be enumerated like any other dll!
+- Mapped modules are visible via winapi, can be enumerated/queried like any other dll!
 - Modules are present in peb, recognized as real modules!
 - No deps besides ntdll (Makes use of syscalls directly)
 - Works exactly like LoadLibrary, which is how it achieves compat
+- dlls like openssl dont have breaking side effects (manualmapped openssl does fail to initialize, but works fine with ntldrmap)
